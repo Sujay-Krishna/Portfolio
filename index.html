@@ -3,121 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B S Sujay Krishna | Portfolio</title>
-  <style>
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
-    body {
-      background: #0f172a;
-      color: #f1f5f9;
-      height: 100vh;
-      width: 100vw;
-      overflow: hidden; /* no scrolling */
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      background: #1e293b;
-      padding: 0.5rem 0;
-    }
-    nav {display: flex; justify-content: center; gap: 2rem;}
-    nav a {color: #f1f5f9; text-decoration: none; font-weight: bold; cursor: pointer;}
-    nav a:hover {color: #38bdf8;}
-
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    section {
-      display: none; /* hidden by default */
-      width: 100%;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    section.active {
-      display: block; /* show only active */
-    }
-
-    h1 {font-size: 1.5rem; margin-bottom: 0.5rem;}
-    h1 span {color: #38bdf8;}
-    p {font-size: 0.9rem; color: #cbd5e1;}
-
-    h2 {font-size: 1.2rem; margin-bottom: 0.5rem; border-bottom: 1px solid #334155; padding-bottom: 0.3rem;}
-    ul {list-style: none; padding-left: 0;}
-    .skills ul {display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;}
-    .skills li {
-      background: #1e293b;
-      padding: 0.3rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-    }
-
-    footer {
-      background: #1e293b;
-      text-align: center;
-      padding: 0.5rem;
-      color: #94a3b8;
-      font-size: 0.8rem;
-    }
-  </style>
+  <title>Home | B S Sujay Krishna</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <nav>
-      <a onclick="showSection('home')">Home</a>
-      <a onclick="showSection('skills')">Skills</a>
-      <a onclick="showSection('resume')">Resume</a>
-      <a onclick="showSection('contact')">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="active">
+    <section>
       <h1>Hello, my name is <span>B S Sujay Krishna</span></h1>
       <p>Business Administration Student | Aspiring Professional | Enthusiastic learner.</p>
-    </section>
-
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>C</li>
-        <li>Basics in C++</li>
-        <li>Basic Java and HTML</li>
-        <li>Slide Presentation</li>
-      </ul>
-    </section>
-
-    <section id="resume" class="resume">
-      <h2>Education</h2>
-      <ul>
-        <li>Vivekananda College of Engineering & Technology</li>
-        <li>Ambika Padavi Poorva Vidyalaya, Puttur (2021–2023)</li>
-      </ul>
-      <h2>Languages</h2>
-      <ul>
-        <li>English</li>
-        <li>Hindi</li>
-        <li>Kannada</li>
-        <li>Tulu</li>
-      </ul>
-      <h2>Projects</h2>
-      <ul>
-        <li>Implementing Contact Book</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong> sujaykrishna109@gmail.com</p>
-      <p><strong>Phone:</strong> +91 9108121406</p>
-      <p><strong>Location:</strong> Puttur, India</p>
     </section>
   </main>
 
@@ -125,15 +28,5 @@
     <p>© 2025 B S Sujay Krishna. All rights reserved.</p>
   </footer>
 
-  <script>
-    function showSection(sectionId) {
-      document.querySelectorAll("main section").forEach(sec => {
-        sec.classList.remove("active");
-      });
-      document.getElementById(sectionId).classList.add("active");
-    }
-  </script>
-
 </body>
 </html>
-
